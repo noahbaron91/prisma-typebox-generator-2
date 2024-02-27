@@ -1,6 +1,6 @@
 {
-  "name": "@noahbaron91/prisma-typebox-generator",
-  "version": "2.1.1",
+  "name": "prisma-typebox-generator-2",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
