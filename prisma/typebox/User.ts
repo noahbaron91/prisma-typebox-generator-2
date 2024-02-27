@@ -3,7 +3,7 @@ import { Type, Static } from "@sinclair/typebox";
 export const User = Type.Object(
   {
     id: Type.Number(),
-    createdAt: Type.Union([Type.String(), Type.Null()]),
+    createdAt: Type.String(),
     email: Type.String(),
     weight: Type.Union([Type.Number(), Type.Null()]),
     is18: Type.Union([Type.Boolean(), Type.Null()]),

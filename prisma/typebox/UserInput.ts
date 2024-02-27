@@ -3,7 +3,7 @@ import { Type, Static } from "@sinclair/typebox";
 export const UserInput = Type.Object(
   {
     id: Type.Optional(Type.Number()),
-    createdAt: Type.Optional(Type.String()),
+    createdAt: Type.String(),
     email: Type.String(),
     weight: Type.Optional(Type.Number()),
     is18: Type.Optional(Type.Boolean()),
