@@ -66,8 +66,15 @@ export function createTransformer(generatorName: string) {
     } else if (field.type === 'Boolean') {
       typeStr = `Type.${overrideType || 'Boolean'}(${optionsStr})`;
     } else {
-      typeStr = `::${field.type}::`;
-      deps.add(field.type);
+      // typeStr = `::${field.type}::`;
+      // deps.add(field.type);
+
+      // Don't generate any relations
+      return {
+        str: '',
+        strInput: '',
+        deps: [],
+      };
     }
 
     if (field.isList) {
